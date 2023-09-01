@@ -1,11 +1,11 @@
 function dividir(valor1, valor2){
-    const resultado = valor1 / valor2;
+    const resultado = valor1 / (valor2**2);
     return resultado;
 }
 
 function calcularIMC(){
-    const valor1 = parseInt(prompt("Ingrese su peso en kg: "));
-    const valor2 = parseInt(prompt("Ingrese su altura en metros: "));
+    const valor1 = parseFloat(prompt("Ingrese su peso en kg: "));
+    const valor2 = parseFloat(prompt("Ingrese su altura en metros: "));
 
     if(dividir(valor1,valor2) <= 18.5){
         alert("Su IMC es " + dividir(valor1,valor2) + " por lo tanto se clasifica en: BAJO");
